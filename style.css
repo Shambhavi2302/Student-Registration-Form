@@ -1,0 +1,64 @@
+h1
+{
+    color:black;
+    text-align: center;
+    background-color: lightblue;
+}
+h2
+{
+    color:black;
+    text-align: center;
+    background-color: lightblue;
+}
+.form-center
+{
+    display:flex;
+    justify-content:center;
+}
+.button
+{
+    justify-content: center;
+    display:flex;
+}
+input[type=text], select{
+    border-color:rgb(194, 194, 221);
+    border-width: 3px;
+    padding:8px;
+}
+input[type=email], select{
+    border-color:rgb(194, 194, 221);
+    border-width: 3px;
+    padding:8px;
+}
+label{
+    font-size: 20px;
+}
+.b1{
+  font-size: 17px;
+  padding: 10px;
+  background-color:blue;
+  font-weight:bold;
+  color: white;
+  border-radius: 10px;
+}
+.b2{
+    font-size: 17px;
+    padding: 10px;
+    background-color:red;
+    font-weight:bold;
+    margin-left: 20px;
+    color: white;
+    border-radius: 10px;
+  }
+  label{
+      font-weight: bold;
+  }
+  tabel,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-color: #96D4D4;
+  }
+  .center{
+    margin-left: auto; 
+    margin-right: auto;
+  }

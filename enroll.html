@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<h1>Student Enrollment Form</h1><br>
+<div class="form-center">
+<form onsubmit="onFormSubmit()">
+    <label style="width:2px">Name:</label><input type="text" name="name" id="name" placeholder="Enter your first name" style="float:right" onkeypress="return  (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required><br><br><br><br>
+    <label style="width:2px">Email:</label><input type="email" name="email" id="email" placeholder="Enter your email" style="float:right" required><br><br><br><br>
+ <label style="width:2px">Website:</label><input type="text" name="website" id="web" placeholder="Enter website" style="float:right" required><br><br><br><br>
+    
+ <label style="width:2px" for="gender">Gender:</label><label for=""></label> <input type="radio" name="g" value="Male" class="gender"><label>Male</label>
+    <input type="radio" name="g" value="Female" class="gender"><label>Female</label>
+    <input type="radio" name="g" value="Other"><label>Other</label><br><br><br><br>
+
+    <label style="width:2px" for="dept">Department:</label><label for=""></label> <input type="radio" name="d" value="IT" class="dept"><label>IT</label>
+    <input type="radio" name="d" value="Computer" class="dept"><label>Computer</label>
+    <input type="radio" name="d" value="Civil"><label>Civil</label><br><br><br><br>
+
+    <div class="form_action--button btn">
+        <input type="submit" value="Submit" class="b1">
+        <input type="reset" value="Reset" class="b2">
+    </div>
+    <hr><br><br>
+    
+</form>
+
+</div>
+<h2>Enrolled Students</h2>
+    <table class="list center" id="storeList">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Website</th>
+                <th>Gender</th>
+                <th>Department</th>
+                <th>Operation</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+<script type="text/javascript" src="form.js"></script>
+</body>
+</html>
